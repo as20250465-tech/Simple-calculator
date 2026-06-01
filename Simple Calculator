@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float a,b;
+    char operation;
+    float n;
+
+    printf("Enter the 1st value:");
+    scanf("%f",&a);
+
+    printf("Enter the operation:");
+    scanf(" %c",&operation);
+
+    printf("Enter the 2nd value:");
+    scanf("%f",&b);
+
+    if (operation=='+') {
+        printf("Answer=%f\n",a+b);
+    }
+
+    else if (operation=='-') {
+        printf("Answer=%f\n",a-b);
+    }
+
+    else if (operation=='*') {
+        printf("Answer=%f\n",a*b);
+    }
+
+    else if (operation=='/') {
+        printf("Answer=%f\n",a/b);
+    }
+
+
+    return 0;
+}
